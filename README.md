@@ -34,3 +34,13 @@ miter = re.finditer('.n', s)
 for mobj in miter:
     print(mobj.group() )
     print(mobj.span() )
+
+import re
+s1 = 'Python Fang'
+s2 =re.sub('[A-Z].{2]', 'e', s1)
+print(s1)
+
+import re
+s = 'Learn Python, Shiori'
+mlist = re.split('.n', s)
+print(s)
