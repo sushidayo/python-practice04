@@ -20,3 +20,17 @@ mobj = re.match('Le', s,re.IGNORECASE)
 reobj = re.compile('Le', re.IGNORECASE)
 print(mobj)
 print(reobj)
+
+import re
+s = 'Learn Python'
+mlist = re.findall('.n', s)
+
+re.match('L.*n', 'Learn Python').group()
+print(s)
+
+import re
+s = 'Learn Python'
+miter = re.finditer('.n', s)
+for mobj in miter:
+    print(mobj.group() )
+    print(mobj.span() )
