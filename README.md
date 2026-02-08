@@ -44,3 +44,8 @@ import re
 s = 'Learn Python, Shiori'
 mlist = re.split('.n', s)
 print(s)
+
+import re
+s = 'Learn Python, Shiori'
+mobj = re.match('Le', s)
+print(s)
